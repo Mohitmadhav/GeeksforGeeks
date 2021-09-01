@@ -1,3 +1,6 @@
+//Problem Statement:https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1
+//All approaches: https://www.geeksforgeeks.org/trapping-rain-water/
+
 #include<iostream>
 #include<bits/stdc++.h>
 
