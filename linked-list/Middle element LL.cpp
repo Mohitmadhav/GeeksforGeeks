@@ -26,4 +26,4 @@ int getMiddle(Node *head)
       t=t->next;
    }
 
-}3
+}
