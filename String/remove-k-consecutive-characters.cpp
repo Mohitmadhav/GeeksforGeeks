@@ -1,3 +1,19 @@
+//Other Methods:https://www.geeksforgeeks.org/reduce-the-string-by-removing-k-consecutive-identical-characters/
+
+/* 
+Examples:  
+
+Input: K = 2, str = “geeksforgeeks” 
+Output: gksforgks 
+Explanation: After removal of both occurrences of the substring “ee”, the string reduces to “gksforgks”.
+
+Input: K = 3, str = “qddxxxd” 
+Output: q 
+Explanation: 
+Removal of “xxx” modifies the string to “qddd”. 
+Again, removal of “ddd”modifies the string to “q”. 
+
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -13,16 +29,16 @@ void removeDuplicates(string s, int k)
     {
         if (!st.empty() && st.top() == s[i])
         {
+            count++;
             if (count == k)
             {
                 st.pop();
                 count = 1;
-               
             }
-            else
-            {
-                count++;
-            }
+            // else
+            // {
+            //     count++;
+            // }
         }
 
         else
